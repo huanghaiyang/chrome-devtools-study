@@ -13,6 +13,7 @@
 不同于桌面，移动设备通常使用GPS来定位地理位置，在Sensors面板，你可以通过输入坐标来模拟地理位置
 
 勾选**Emulate geolocation coordinates**复选框，填入坐标
+
 ![](https://developers.google.com/web/tools/chrome-devtools/device-mode/imgs/emulation-drawer-geolocation.png)
 
 当地理位置数据不可用时，可以使用模拟器覆盖```navigator.geolocation```属性
