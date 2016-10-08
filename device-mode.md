@@ -97,18 +97,18 @@
 不同媒体查询的快速预览效果的切换方式
 ![](https://developers.google.com/web/tools/chrome-devtools/device-mode/imgs/media-query-inspector-ruler.png)
 以不同的颜色区分媒体查询
-<table style='border:none;'>
+<table>
     <tbody>
         <tr>
-            <th style='height: 40px;backgroud-color:blue;'></th>
+            <th style="height: 40px;backgroud-color:blue;width: 60px;"></th>
             <th>最大宽度</th>
         </tr>
         <tr>
-            <th style='height: 40px;backgroud-color:green;'></th>
+            <th style="height: 40px;backgroud-color:green;width: 60px;"></th>
             <th>范围宽度</th>
         </tr>
         <tr>
-            <th style='height: 40px;backgroud-color:#d4731f;'></th>
+            <th style="height: 40px;backgroud-color:#d4731f;width: 60px;"></th>
             <th>最小宽度</th>
         </tr>
     </tbody>
