@@ -8,7 +8,7 @@
 + 本地查看所做的修改(Sources 面板)
 
 ## 实时修改元素节点
-![](edit node.png)
+![](edit_node.png)
 
 ## 实时修改样式
 除了灰色部分的UA样式定义，其他均可以进行修改,而且修改部分在网页重新加载后就会丢失
@@ -23,7 +23,7 @@
 ![](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/imgs/computed-non-static.png)
 
 ## 查看修改的样式内容
-![](css local change.png)
+![](css_local_change.png)
 查看当前页面的修改历史步骤如下：
 1.在Style面板，点击被你修改的文件，DevTool会转到Sources面板
 2.右键文件

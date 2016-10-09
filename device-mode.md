@@ -27,7 +27,7 @@
 
 ##### 自定义大小
 通过拖动或键入数值的方式
-![](imgs/viewport resize.png)
+![](imgs/viewport_resize.png)
 
 #### 指定模拟设备
 指定站点在某个设备上运行
