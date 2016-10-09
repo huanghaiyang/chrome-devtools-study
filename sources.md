@@ -72,3 +72,25 @@
 ## 给未捕获的异常添加断点
 如果你的代码抛出了异常而且你不知道哪里出现了错误，那么可以在**Sources**面板上点击**pause on exception**按钮(![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/pause-on-exception-button.png))
 
+## 调试代码
+利用此功能我们可以监听数据对象的改变并且可以更加直观的了解到页面到底发生了什么，你可以利用脚本修改数据值，甚至修改脚本本身</br>
+通常我们会在设置完断点后，返回到当前页面进行操作直到断点被触发，断点触发操作阻塞了当前页面的JavaScript脚本，并且将DevTools切换到**Sources**面板，高亮显示当前设置断点的代码行，此时你可以钻取代码并查看数据值。
++ 在代码执行前或执行过程中进行监听或者实时修改代码并使其生效
++ 替代console
++ 启用Async call stack(堆栈异步调用)让异步函数调用栈过程更清晰
++ 在调用栈中用黑盒来隔离并隐藏第三方代码
++ 用命名函数替代匿名函数更易于提高调用栈的可读性
+
+## 逐步操作
+工具栏包含了这些按钮![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/image_7.png),分别表示如下：
+|        按钮        |           操作           |         描述           |
+| ------------- |:-------------:| -----:|
+|![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/image_8.png)|继续执行|继续执行执行下一个断点|
+|![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/image_9.png)|持续执行|断点不阻塞，持续执行500ms|
+|![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/image_10.png)|跳过|执行下一行|
+|![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/image_11.png)|跳入|跳入到函数内部|
+|![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/image_12.png)|跳出|跳出当前函数|
+|![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/image_13.png)|禁用断点|禁用所有断点|
+|![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/image_14.png)|异常暂停|异常发生时自动暂停代码执行|
+
+
