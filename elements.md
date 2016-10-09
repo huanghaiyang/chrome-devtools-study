@@ -25,7 +25,9 @@
 ## 查看修改的样式内容
 ![](imgs/css_local_change.png)
 查看当前页面的修改历史步骤如下：
+
 1. 在Style面板，点击被你修改的文件，DevTool会转到Sources面板
 2. 右键文件
 3. 选择Local modifications
+
 
