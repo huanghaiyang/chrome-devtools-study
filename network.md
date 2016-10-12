@@ -10,13 +10,13 @@
 + 按需自定义network面板
 
 network面板分为五个显示区域，各自表示如下：
-1.Controls 控制面板的显示和功能
-2.Filters  过滤请求列表的显示内容
-3.Overview 资源的并发请求
-4.Requests Table 详细的显示了资源请求的时间线
-5.Summary 显示了资源的请求数量，数据传输大小和加载时间
+1. Controls 控制面板的显示和功能
+2. Filters  过滤请求列表的显示内容
+3. Overview 资源的并发请求
+4. Requests Table 详细的显示了资源请求的时间线
+5. Summary 显示了资源的请求数量，数据传输大小和加载时间
 
-![]{https://developers.google.com/web/tools/chrome-devtools/network-performance/imgs/panes.png}
+![](https://developers.google.com/web/tools/chrome-devtools/network-performance/imgs/panes.png)
 
 ## Request Table各显示列的含义
 + Name 资源名称
