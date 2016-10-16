@@ -25,6 +25,7 @@
 + [Console](console.md)
 + [Application](applicatiion.md)
 + [Device Mode](device-mode.md)
++ [Animations](animations.md)
 
 同时可以使用```Ctrl``` + ```[``` 或者 ```Ctrl``` + ```]``` 切换功能面板
 
