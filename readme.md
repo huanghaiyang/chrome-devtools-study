@@ -23,6 +23,8 @@
 + [Profiles](profiles.md)
 + [Audits](audits.md)
 + [Console](console.md)
++ [Application](applicatiion.md)
++ [Device Mode](device-mode.md)
 
 同时可以使用```Ctrl``` + ```[``` 或者 ```Ctrl``` + ```]``` 切换功能面板
 
@@ -64,7 +66,7 @@ Timeline面板提供了一个完整分析页面或者app的具体时间花费的
 ![timeline面板](https://developer.chrome.com/devtools/devtools/images/timeline-panel.png)
 [详细介绍](https://developer.chrome.com/devtools/devtools/docs/timeline)
 
-## Javascript & css 
+## Javascript & css
 Profiles面板能够让你分析网页或者app的执行时间以及内存使用情况，这能够帮助你了解资源是如何被使用的，如何优化你的代码，提供的主要分析功能如下：
 + CPU分析</br>
     展示页面中JavaScript函数执行时间
