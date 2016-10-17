@@ -35,7 +35,7 @@
 ##### 预置设备
 包含了当前最为流行的几款设备，选择设备后，每一个预先设定的配置都会自动的加入到设备特征中
 + 中设置正确的'User Agent'
-+ 设定设备的分辨率及DPI
++ 设定设备的分辨率及DPR
 + 模拟触控事件
 + 模拟移动设备滚动凡是及元视图(meta viewport)
 + 未明确给出viewport设置则自动调整字体大小
@@ -49,7 +49,7 @@
 + 打开DevTools设置面板
 + 选择Devices面板
 + 点击 Add custom device
-+ 键入设备名称、宽度、高度、DPI和UA
++ 键入设备名称、宽度、高度、DPR和UA
 + 点击Add 按钮
 
 ![](https://developers.google.com/web/tools/chrome-devtools/device-mode/imgs/custom-device.png)
@@ -64,13 +64,13 @@
 
 #### 缩放适配
 + Fit to Window会自动设置屏幕最大可用的缩放比例，默认100%
-+ 指定缩放比,通常用于测试图片等在DPI下的显示效果
++ 指定缩放比,通常用于测试图片等在DPR下的显示效果
 
 ![](https://developers.google.com/web/tools/chrome-devtools/device-mode/imgs/zoom-to-fit.png)
 
 #### 其他选项控制(touch、media queries, DPR)
 + UA类型（模拟UA及touch事件）
-+ DPI
++ DPR
 + 媒体查询
 + 标尺
 + 网络配置（节流）
@@ -88,7 +88,7 @@
 
 网页上对DPR有实现的例子如下：
 + CSS媒体查询</br>
-    ```@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { ... }```
+    ```@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192DPR) { ... }```
 + CSS```image-set```样式规则
 + image标签的srcset属性
 + ```window.devicePixelRatio```

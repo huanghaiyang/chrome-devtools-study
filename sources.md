@@ -83,14 +83,98 @@
 
 ## 逐步操作
 工具栏包含了这些按钮![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/image_7.png),分别表示如下：
-|        按钮        |           操作           |         描述           |
-| ------------- |:-------------:| -----:|
-|![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/image_8.png)|继续执行|继续执行执行下一个断点|
-|![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/image_9.png)|持续执行|断点不阻塞，持续执行500ms|
-|![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/image_10.png)|跳过|执行下一行|
-|![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/image_11.png)|跳入|跳入到函数内部|
-|![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/image_12.png)|跳出|跳出当前函数|
-|![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/image_13.png)|禁用断点|禁用所有断点|
-|![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/image_14.png)|异常暂停|异常发生时自动暂停代码执行|
+<table>
+    <tbody>
+        <tr>
+            <td>按钮</td>
+            <td>操作</td>
+            <td>描述</td>
+        </tr>
+        <tr>
+            <td>![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/image_8.png)</td>
+            <td>继续执行</td>
+            <td>继续执行执行下一个断点</td>
+        </tr>
+        <tr>
+            <td>![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/image_9.png)</td>
+            <td>持续执行</td>
+            <td>断点不阻塞，持续执行500ms</td>
+        </tr>
+        <tr>
+            <td>![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/image_10.png)</td>
+            <td>跳过</td>
+            <td>执行下一行</td>
+        </tr>
+        <tr>
+            <td>![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/image_11.png)</td>
+            <td>跳入</td>
+            <td>跳入到函数内部</td>
+        </tr>
+        <tr>
+            <td>![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/image_12.png)按钮</td>
+            <td>跳出</td>
+            <td>跳出当前函数</td>
+        </tr>
+        <tr>
+            <td>![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/image_13.png)</td>
+            <td>禁用断点</td>
+            <td>禁用所有断点</td>
+        </tr>
+        <tr>
+            <td>![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/image_14.png)</td>
+            <td>异常暂停</td>
+            <td>异常发生时自动暂停代码执行</td>
+        </tr>
+    </tbody>
+</table>
 
+## View properties by scope
+主要用于查看作用域中定义的属性,
+![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/scope-pane.png)
+其中，有些属性会是颜色较浅的，表示不可枚举类型，颜色较亮的为属性，可枚举
+![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/enumerables.png)
+constructor为构造函数，不可枚举，confirm为属性，可枚举
+
+## The call stack
+如图所示，清楚的展示了函数的调用顺序，注意，调用顺序为从下往上
+![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/image_15.png)
+分别为：
++ index.html中第50行触发了onclick事件
++ 调用setone()方法
++ 调用setall()方法
+
+## Enable the async call stack
+激活**Async**复选框，能够查看当前函数的异步调用方式
+
+## Blackbox third-party code
+使用此功能能够将第三方的代码调用从你的call stack 中隐藏起来
+before blackbox:
+![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/before-blackbox.png)
+after blackbox:
+![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/after-blackbox.png)
+对比可以看到，jquery的调用已经在call stack中被隐藏起来
+
+想要开启此功能，需要如下步骤：
++ 打开DevTools settings
+    ![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/open-settings.png)
++ 选择Blackboxing
+    ![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/blackbox-panel.png)
++ 点击 **Add pattern**
+    ![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/add-pattern.png)
++ 选择下拉中的blackbox选项
++ add
+
+## 在任一页面运行代码片段
+### 创建代码片段
+
+![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/create-snippet.png)
+
+### 运行代码片段
+点击按钮![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/run.png)运行或者
+![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/evaluate-in-console.png)
+
+### 查看代码片段的本地修改历史
+![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/local-modifications.png)
+结果   
+![](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/snippet-history.png)
 
